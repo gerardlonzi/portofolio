@@ -60,6 +60,7 @@ nav a:hover{
     padding-top: 120px;
     border-right:solid 5px   rgb(69, 238, 187);
     border-bottom: solid 5px  rgb(69, 238, 187);
+    height: 550px;
 
   
 
@@ -256,7 +257,7 @@ nav a:hover{
     outline: none;
     padding: 10px 17px;
     font-size: 19px;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-top: 25px;
     color: white;
     background-color:  rgb(69, 238, 187);
