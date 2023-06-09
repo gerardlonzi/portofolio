@@ -60,6 +60,10 @@ nav a:hover{
     padding-top: 120px;
     border-right:solid 5px   rgb(69, 238, 187);
     border-bottom: solid 5px  rgb(69, 238, 187);
+<<<<<<< HEAD
+=======
+    height: 550px;
+>>>>>>> e2a455b060d43aa4681e443b5388b6c5930b80db
 
   
 
@@ -256,7 +260,11 @@ nav a:hover{
     outline: none;
     padding: 10px 17px;
     font-size: 19px;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+    border-radius: 6px;
+>>>>>>> e2a455b060d43aa4681e443b5388b6c5930b80db
     margin-top: 25px;
     color: white;
     background-color:  rgb(69, 238, 187);
