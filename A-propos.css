@@ -3,6 +3,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: rgb(19, 30, 39);
+    padding-left: 150px;
+    padding-right: 150px;
+}
 nav p{
     font-family:  "Audiowide", sans-serif;
     font-weight: bold;
@@ -10,6 +15,12 @@ nav p{
     font-size: 23px;
     color: white;
 }
+nav span{
+    color:rgb(69, 238, 187)
+}
+
+
+
 nav li{
     list-style: none;
     display: inline;
@@ -21,22 +32,153 @@ nav{
     flex-direction: row;
     justify-content: space-between;
     padding: 25px ;
-    animation: circle 4s ease infinite;
 
 }
 nav a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 18px;
     transition: .4s ease;
-    color: white;
+    transition: .7s ease;
 
 }
 nav a:hover{
-    font-size: 20px;
-    color: rgb(148, 146, 146);
-    
+    text-shadow: 5px 5px  10px rgb(35, 255, 226);
+    color:rgb(35, 255, 226) ;
 }
+
+.cadre img{
+    width: 130%;
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    background-color: rgb(25, 41, 54);
+    border-radius: 5px;
+    transition: .4s ease;
+}
+.cadre img:hover{
+    transform: translatey(-5%);
+}
+.introd{
+   display: flex;
+   flex-direction: row;
+   padding-top: 100px;
+}
+.introd h2{
+    color: rgb(69, 238, 187);
+    font-size: 45px;
+}
+.introd .text {
+    padding-top: 30px;
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    line-height: 30px;
+}    
+.infos{
+    position: relative;
+    padding-left: 140px;
+    animation: lefte 4s ease;
+}
+
+.introd button{
+    border: none;
+    outline: none;
+    padding: 10px 17px;
+    font-size: 19px;
+    border-radius: 10px;
+    margin-top: 25px;
+    color: white;
+    background-color:  rgb(69, 238, 187);
+    transition: .4s ease;
+
+}
+.introd button:hover{
+    background-color: rgb(35, 255, 226);
+    box-shadow: 5px 5px 10px rgb(13, 250, 238);
+    transform: translatey(-20%);
+}
+.all h2{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    color:rgb(69, 238, 187) ;
+}
+.block{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.bloc1,.bloc2,.bloc3{
+    position: relative;
+    background-color: rgb(25, 41, 54);
+    margin: 10px;
+    border-radius: 10px;
+    transition: .7s ease;
+}
+.bloc2 img{
+    width: 80%;
+} 
+.block .overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    background-color:rgba(69, 238, 187,.5) ;
+    transition: .5s ease;
+    border-radius: 10px;
+}
+.block p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color :white;
+    font-size: 19px;
+    text-align :center;
+
+}
+.bloc1:hover .overlay{
+    height: 100%;
+}
+.bloc1:hover{
+    transform: translatey(-15%);
+}
+.bloc2:hover .overlay{
+    height: 100%;
+}
+.bloc2:hover{
+    transform: translatey(-15%);
+}
+.bloc3:hover .overlay{
+    height: 100%;
+}
+.bloc3:hover{
+    transform: translatey(-15%);
+}
+
+@keyframes lefte {
+    0%{
+         top: -300px;
+         visibility: hidden;
+     } 
+     50%{
+        visibility: hidden;
+     } 
+     75%{
+        top: 0px;
+        visibility: visible;
+     }  
+    
+     100%{
+        top: initial; 
+        visibility: visible; 
+     }
+   
+ }
+
 @keyframes circle {
     0%{
         background:linear-gradient(rgb(112, 112, 112),rgb(192, 192, 192),rgb(102, 102, 102));
@@ -52,11 +194,35 @@ nav a:hover{
         background:linear-gradient(rgb(167, 167, 167),rgb(104, 103, 103),rgb(95, 95, 95));
     }
 }
-.presentation img{
-    width: 150%;
-    border-radius: 50%;
+
+@keyframes move{
+    from{
+        top: 0;
+        left: -1000px;
+    }
+    to{
+        left: 0px;
+        top: initial;
+    }
 }
-.old{
-    display: flex;
-    flex-direction: row;
+
+
+
+@keyframes monte {
+   0%{
+        bottom: 0px;
+        visibility: hidden;
+    }    
+    80%{
+       top: 100px; 
+       visibility: hidden;
+    }
+    100%{
+       top: 0px; 
+       visibility: visible; 
+    }
+  
 }
+
+
+
