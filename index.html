@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <script src="index.js" type="module"></script>
     <title>ACCUEIL</title>
 </head>
 <body>
     <header>
+        <div class="mean" id="mean" >
+           <p>   
+                <a href="index.html">Accueil</a>
+                <a href="A-propos.html"> A-propos</a>
+                <a href="">Contact</a>
+                <div class="closed"><i class="fa fa-close "></i></div>
+            </p>  
+        </div>
         <nav>
+           
             <p class="logo"><i class="fa fa-arrows-v"></i>GL-<span>Design</span></p>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="A-propos.html"> A-propos</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
+            <div class="navi">
+                <i class="fa fa-navicon"></i>
+
+            </div>
         </nav>    
     </header>
     <main>
@@ -83,7 +97,7 @@
             <div class="call">
                 <div class="address">
                     <h1>Me contacté</h1>
-                    <p>Vous pouvez me contacté a partir de mes<br> reseaux  sociaux juste en dessous ou vous  <br>pouvez me laissez un  message juste là a coté 👉👉</p>
+                    <p>Vous pouvez me contacté a partir de mes reseaux  sociaux juste en dessous ou vous  pouvez me laissez un  message juste là a coté 👉👉</p>
                     <div class="socio">
                         <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOVJREFUSEvt1DFKQ0EQxvFfChHraOMRtEthYZPGAwREb2DQMk0qG4v0dhFs7WIjthYWtnqABFIqaK4QCA+mCJKw7OM9SJGtht2d7z87szMNNa9Gzfo2DnCMAU6wj2884XZdJnJecIgpdv+JPeOiCsAQ1yuERrisAvCJVgi94wzz1CfJSdEvDkLwBg8p8eI8BzBDM0S7eKwCUOT2KIT62Av7FV9hf+CtbA2KH3KeiLSH+zoBHbyUBdyhHc6n2Al7jJ+wrzApC1j2+4vuLfYqK/IWkNVo2xokJ0vtKUpGsOpCzjTdTMACXwcqGZt877oAAAAASUVORK5CYII="/></a>
                         <a href=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAhVJREFUSEvN1UnITnEUBvDfx8JMdoREiChThg1JmVI2hqIUiTInZcGGYiE2xpQSxUKxUJJZSCFiY0ghsjKkKGTu6Lxfb2/3vq/NW99Z3e7//M9zz3Oe89wWTY6WJtfXJgDGYgEmYwh+4Rbu4AIe1GOhXgf9cBgz8DkLPcE3jMZI9MBubMH3IqAygPjSa+iADTiOPwUF1ibAC8zDo9qcIoBeuJdUTMXzBkIYgTNoh+H4Up1fBHAO4zEOL9EH3fC0DlCA3McRrKwHMAk3sCyTh2U37zCghKZKvc3Ygem4VHlZ28E+LEVP/MAm7MzkGPbFOl10SjEEXXPLAB7iNeZkwiocyOcAPtpgHnE/YlQZwBvEDFZkQu+cw0eEbH82ADiEReheBvAsh7WwqlBIcS8OYk2DOQSd69GxDOB88j+h5ktP5jYHvwHYOekK1ZxCdBgReWMwuAxgew62L95WgbTHHqzGJ/55WEg3YlfeiT14j9NYXgYwMBdrG7YW8D0t6RqaZ78xM2UZ3J9Ia2lVW9GihRLC0MLkyiJoiEG+ShH0x12EV02pvlQL0CX5jH3Y2EAxleMofjkBY/tD5q1RCzAbZ7EY0X5s5W0cw9cawJjTEqxLZYVvNTS7/TnISq24MCit+HrSEa4aXjUxk27m9heaYm0H4SGReBVX8AFdMR+zEPING3mcnhUSDe5Lo038Mv9z1sVpTe/gL9I6cRkc/rZLAAAAAElFTkSuQmCC"/></a>
@@ -93,20 +107,22 @@
                 </div>
                 <div class="message">
                     <form action="">
-                        <div class="coment">
-                            <label for="name">Nom</label>
-                            <input type="text" name="name" id="">
-                        </div> 
-                        <div class="coment">
-                            <label for="numero">Numero</label>
-                            <input type="number" name="numero" id="" required>
-                        </div> 
-                        <div class="coment">  
-                            <label for="message">Message</label>  
-                            <textarea name="message" id="" cols="40" rows="7"></textarea>
+                        <div class="htpp">
+                            <div class="coment">
+                                <label for="name">Nom</label>
+                                <input type="text" name="name" id="">
+                            </div> 
+                            <div class="coment">
+                                <label for="numero">Numero</label>
+                                <input type="number" name="numero" id="" required>
+                            </div> 
+                            <div class="coment">  
+                                <label for="message">Message</label>  
+                                <textarea name="message" id="" cols="40" rows="7"></textarea>
+                            </div>    
+                            <input type="reset" value="Tout effacer" class="btn">
+                            <input type="submit" value="envoyer" class="btn">
                         </div>    
-                        <input type="reset" value="Tout effacer" class="btn">
-                        <input type="submit" value="envoyer" class="btn">
                     </form>
                 </div>
             </div>
